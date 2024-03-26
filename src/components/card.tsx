@@ -1,11 +1,13 @@
-import React from "react";
-import Cat from "./cat.jpg";
 
-export default function Card() {
+ interface CardProps{
+  image:string
+ }
+
+export default function Card(props:CardProps) {
   return (
     
       <div className="card " style={{ width: "18rem" }}>
-        <img src={Cat} className="card-img-top" alt="..." />
+        <img src={props.image} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">Card title</h5>
           <p className="card-text">
