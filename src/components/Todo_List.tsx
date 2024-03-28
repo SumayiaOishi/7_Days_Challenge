@@ -2,8 +2,6 @@
 import React, { useState } from "react";
 
 
-
-
 export default function Todo_List() {
   const [text, setText]=useState('');
  
@@ -11,9 +9,7 @@ export default function Todo_List() {
        setText(event.target.value);
   }
   const added=()=>{
-     <ul>
-      
-     </ul>
+     
   }
   return (
     <div className="main1">
