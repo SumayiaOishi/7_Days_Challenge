@@ -1,24 +1,23 @@
+import React from 'react';
 
- interface CardProps{
-  image:string
- }
+interface CardProps {
+  image: string;
+}
 
-export default function Card(props:CardProps) {
+export default function Card(props: CardProps) {
   return (
-    
-      <div className="card " style={{ width: "18rem" }}>
-        <img src={props.image} className="card-img-top" alt="..." />
-        <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="/" className="btn btn-primary">
-            Go somewhere
-          </a>
-        </div>
+    <div className="card "> 
+      <img src={props.image} className="card-img-top" alt="..." style={{ objectFit: 'cover', height: '200px' , width: '100%'}} /> 
+      <div className="card-body d-flex flex-column">
+        <h5 className="card-title">Fun Fact About Cat</h5>
+        <p className="card-text flex-fill">
+        Cats sleep for many hours each day. When they are awake they need opportunities to exercise and play.
+        </p>
+        <a href="https://www.youtube.com/watch?v=JxS5E-kZc2s" className="btn btn-primary "> 
+          Funny Cats
+        </a>
       </div>
-    
+    </div>
   );
 }
+ 
