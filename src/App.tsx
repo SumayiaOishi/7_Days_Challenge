@@ -1,8 +1,8 @@
 import Card from "./components/card";
 import './App.css'
 import Cat from "./components/cat.jpg";
-import Cat2 from './components/cat2.jpeg';
 import TodoList from './components/Todo_List'
+import New from './components/neew'
 function App() {
  
 
@@ -12,6 +12,8 @@ function App() {
       <Card image={Cat}/>
       <TodoList/>
       </div>
+
+  <New/>
      
       
     </>
